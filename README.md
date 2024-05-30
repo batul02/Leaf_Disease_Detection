@@ -86,7 +86,7 @@ The dataset is available [here](https://data.mendeley.com/datasets/tywbtsjrjv/1)
 - The dataset directory is defined, and classes with their corresponding directories are specified.
 - Images are loaded, resized, and converted to NumPy arrays.
 - Image data is normalized, and the dataset is split into training, validation, and test sets.
-  ![image](https://github.com/batul02/Leaf_Disease_Detection/assets/50478830/0ad663c1-a9c0-413d-939d-6a189c8f2f32)
+- ![image](https://github.com/batul02/Leaf_Disease_Detection/assets/50478830/0ad663c1-a9c0-413d-939d-6a189c8f2f32)
 
 
 ### Image Preprocessing and Feature Extraction
@@ -94,13 +94,13 @@ The dataset is available [here](https://data.mendeley.com/datasets/tywbtsjrjv/1)
 - Edge features are extracted using Canny edge detection.
 - Texture features are extracted using Local Binary Patterns (LBP).
 - Edge and texture features are concatenated to form the final feature vector.
-  ![image](https://github.com/batul02/Leaf_Disease_Detection/assets/50478830/f5e095a6-74c3-4eea-9f9e-71c33c375be6)
+- ![image](https://github.com/batul02/Leaf_Disease_Detection/assets/50478830/f5e095a6-74c3-4eea-9f9e-71c33c375be6)
 
 
 ### Model Architecture and Transfer Learning
 - The VGG16 model is used as the base for transfer learning, with its top layers removed.
 - Custom top layers are added, including Global Average Pooling, Dense layers, BatchNormalization, Dropout, and a final Dense layer for multi-class classification.
-  ![image](https://github.com/batul02/Leaf_Disease_Detection/assets/50478830/3d7f240f-2ab6-45d3-aa1e-532d0ca52bb4)
+- ![image](https://github.com/batul02/Leaf_Disease_Detection/assets/50478830/3d7f240f-2ab6-45d3-aa1e-532d0ca52bb4)
 
 ### Model Compilation
 - The model is compiled with the Adam optimizer, categorical cross-entropy loss, and accuracy metric.
@@ -109,7 +109,7 @@ The dataset is available [here](https://data.mendeley.com/datasets/tywbtsjrjv/1)
 - The model is trained using the extracted features from the training set and their encoded labels.
 - Early stopping and model checkpoint callbacks are used to monitor training and save the best model.
 - Training history is stored in a DataFrame and saved as a CSV file.
-  ![image](https://github.com/batul02/Leaf_Disease_Detection/assets/50478830/52c0ff59-723c-46ae-9182-376670a49e7e)
+- ![image](https://github.com/batul02/Leaf_Disease_Detection/assets/50478830/52c0ff59-723c-46ae-9182-376670a49e7e)
 
 
 ## Testing
@@ -152,7 +152,7 @@ Using FastAPI Docs:
 - Navigate to [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs) in your web browser.
 - You'll see an interactive API documentation interface.
 - Use the `/predict` endpoint to upload an image and get a prediction.
-  ![image](https://github.com/batul02/Leaf_Disease_Detection/assets/50478830/1050473a-85ba-4d29-8bac-d78ee518b3fd)
+- ![image](https://github.com/batul02/Leaf_Disease_Detection/assets/50478830/1050473a-85ba-4d29-8bac-d78ee518b3fd)
 
 
 Demo FastAPI Video – [here](https://mahindraecolecentrale-my.sharepoint.com/:v:/g/personal/se23maid010_mahindrauniversity_edu_in/EXMQe8MR5vFDluNDJ-xj6_MBAXgk_20EKuY3NjGFm2RYRg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=MzZwBF).
@@ -160,7 +160,7 @@ Demo FastAPI Video – [here](https://mahindraecolecentrale-my.sharepoint.com/:v
 ## Results
 
 - **Epoch (10) vs Training Accuracy & Validation Accuracy**
-  ![image](https://github.com/batul02/Leaf_Disease_Detection/assets/50478830/292644cd-2580-455e-9dd4-5a1e1b49e050)
+- ![image](https://github.com/batul02/Leaf_Disease_Detection/assets/50478830/292644cd-2580-455e-9dd4-5a1e1b49e050)
 
   Train Loss: 0.7492
   Train Accuracy: 0.7640
